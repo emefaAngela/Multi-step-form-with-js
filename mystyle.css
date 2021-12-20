@@ -1,0 +1,71 @@
+
+#form1{
+   display: block; 
+    
+}
+#form2{
+  display: none;
+  margin-left: 90px;
+}
+
+
+p{
+    align-items: center;
+    justify-content: center;
+}
+body{
+    display: flex;
+     flex-direction: column; 
+     justify-content: center;
+     align-items: center;
+}
+input{
+    width: 200px;
+    margin:10px;
+}
+.container{
+    display: flex;
+     flex-direction: row; 
+     justify-content: center;
+      align-content: center;
+       margin: 20px;
+        width: 330px; 
+        height: 400px; 
+        background-color: bisque;
+         overflow: hidden;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: none;
+}
+.address-btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#btn-1{
+  margin:10px;
+   background-color: pink;
+}
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }

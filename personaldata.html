@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="mystyle.css">
+    
+    
+    </head>
+    <body >
+      <h1>Form</h1>
+
+      <div style="text-align:center;margin-top:40px;">
+        <span class="step" id="check1"></span>
+        <span class="step" id="check2"></span>
+        
+        
+      </div>
+      <div class="container">
+        <div class="form" id="form1" >
+      <form   >
+         <p><input type="text" placeholder="First name" id="firstname" ></p>
+          <p><input type="text" placeholder="Last name" id="lastname" ></p>
+          <p><input type="text" placeholder="Place of Birth" id="place"></p>
+          <p><input type="number" placeholder="Contact" id="number" ></p>
+          <p><input type="email" placeholder="Email" id="email" > </p>
+          <select style="margin:10px;">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              
+          </select>
+          <button id="btn-1" click="step1()">next</button>
+         
+      </form>
+      </div>
+      <div class="form" id="form2" >
+        <form onsubmit="getdata()"  >
+           <p><input type="text" placeholder="Country" id="country" ></p>
+            <p><input type="text" placeholder="City" id="city" ></p>
+            <p><input type="text" placeholder="Town" id="town"></p>
+            <p><input type="number" placeholder="Street name" id="stname" ></p>
+            <p><input type="email" placeholder="House No." id="hseno" > </p>
+        </form>
+        <div class="address-btns">
+        <button style="margin:10px; background-color: pink;" id="next2" click="step()"  >previous</button>
+           
+        <button  id="submit" style="margin:10px; background-color: pink; width: 100px;" click='done() getdata()' >Submit</button>
+        </div>  
+        </div>
+
+      <!-- <div class="form " style="display: none;" >
+        <form  onsubmit="getdata()">
+            <p><input type="text" placeholder="Address" id="address" ></p>
+            <p><input type="text" placeholder="Street name" id="stname" ></p>
+           <p> <input type="text" placeholder="City" id="city"></p>
+           <p> <input type="number" placeholder="Town" id="town" ></p>
+           <p> <input type="email" placeholder="Country" id="country" ></p> 
+            
+            <div class="buttons"></div>
+            <button style="margin:10px; background-color: pink;" id="prev" >previous</button>
+            <input type="submit" style="margin:10px; background-color: pink;" onsubmit="getdata()" />
+           
+        </form>
+        </div> -->
+
+      
+    </body>
+    <script src="form.js" >
+    </script>
+</html>
